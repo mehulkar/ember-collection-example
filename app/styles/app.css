@@ -1,0 +1,12 @@
+.ember-collection-wrapper {
+  position:relative;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  border: solid 1px #ccc;
+}
+
+
+.ember-collection-wrapper > div > div > div > div:nth-child(odd) {
+  background-color: yellow;
+}

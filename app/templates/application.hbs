@@ -1,3 +1,11 @@
 <h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+<button {{action 'applyFilter'}}>
+  Filter
+</button>
+
+<div class='ember-collection-wrapper'>
+  {{#ember-collection items=filteredData cell-layout=(fixed-grid-layout 500 50) as |item index| }}
+    <div class='item'>{{item.name}}</div>
+  {{/ember-collection}}
+</div>
